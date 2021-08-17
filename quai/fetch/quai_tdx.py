@@ -2536,12 +2536,14 @@ if __name__ == '__main__':
     #rows = QA_fetch_get_commodity_option_CU_contract_time_to_market()
     #print(rows)
 
-    #print(QA_fetch_get_stock_day('000001', '2017-07-03', '2017-07-10'))
+    # print(QA_fetch_get_stock_day('000001', '2017-07-03', '2017-07-10'))
+    df = QA_fetch_get_stock_day('000001', '2017-07-03', '2017-07-10')
+    print(df.columns)
     #print(QA_fetch_get_stock_day('000001', '2013-07-01', '2013-07-09'))
     # print(QA_fetch_get_stock_realtime('000001'))
     # print(QA_fetch_get_index_day('000001', '2017-01-01', '2017-07-01'))
     # print(QA_fetch_get_stock_transaction('000001', '2017-07-03', '2017-07-10'))
 
     # print(QA_fetch_get_stock_info('600116'))
-    rows = QA_fetch_get_hkstock_list()
-    print(rows)
+    # rows = QA_fetch_get_hkstock_list()
+    # print(rows)
